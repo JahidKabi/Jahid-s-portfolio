@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./WorkPermit.css";
 import { getWorkPermit } from "../queries/getWorkPermit";
 import { WorkPermit as IWorkPermit } from "../types";
+import GoBack from "../components/GoBack";
 const WorkPermit: React.FC = () => {
   const [workPermitData, setWorkPermitData] = useState<IWorkPermit | null>(
     null
@@ -28,6 +29,7 @@ const WorkPermit: React.FC = () => {
         </p>
         <p className="additional-info">
           For any additional queries please reach me out on +86 15151886124
+          <GoBack></GoBack>
         </p>
       </div>
     </div>

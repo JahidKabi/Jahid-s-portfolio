@@ -1,0 +1,14 @@
+.go-back-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #007bff;
+  cursor: pointer; /* 👈 this shows the hand icon */
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.go-back-button:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
