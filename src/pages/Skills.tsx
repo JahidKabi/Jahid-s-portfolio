@@ -1,43 +1,45 @@
-import React, { useEffect, useState } from 'react';
-import './Skills.css';
-import { getSkills } from '../queries/getSkills';
-
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
-import { Skill } from '../types';
+import React, { useEffect, useState } from "react";
+import "./Skills.css";
+import { FaReact, FaNodeJs, FaCodeBranch } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiMysql,
+  SiKubernetes,
+  SiPhp,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+} from "react-icons/si";
+import { Skill } from "../types";
 
 const iconMap: { [key: string]: JSX.Element } = {
-  SiRubyonrails: <SiRubyonrails />,
+  SiPython: <SiPython />,
   FaNodeJs: <FaNodeJs />,
-  SiSpringboot: <SiSpringboot />,
-  FaJava: <FaJava />,
+  FaCodeBranch: <FaCodeBranch />,
   SiPhp: <SiPhp />,
   FaReact: <FaReact />,
   SiTypescript: <SiTypescript />,
-  FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
-  SiPostgresql: <SiPostgresql />,
   SiMysql: <SiMysql />,
   SiKubernetes: <SiKubernetes />,
-  SiGooglecloud: <SiGooglecloud />,
-  SiHeroku: <SiHeroku />,
-  SiNetlify: <SiNetlify />,
-  SiRabbitmq: <SiRabbitmq />,
-  SiImessage: <SiImessage />,
+  SiHtml5: <SiHtml5 />,
+  SiCss3: <SiCss3 />,
 };
 
-
 const Skills: React.FC = () => {
-
   const [skillsData, setSkillsData] = useState<Skill[]>([]);
 
   useEffect(() => {
-    async function fetchSkills() {
-      const data = await getSkills();
-      setSkillsData(data);
-    }
+    const fetchSkills = async () => {
+      try {
+        const res = await fetch("/data.json");
+        const data = await res.json();
+        setSkillsData(data);
+      } catch (error) {
+        console.error("Error fetching skills data:", error);
+      }
+    };
 
-    fetchSkills()
+    fetchSkills();
   }, []);
 
   if (skillsData.length === 0) return <div>Loading...</div>;
@@ -48,7 +50,6 @@ const Skills: React.FC = () => {
     return acc;
   }, {});
 
-
   return (
     <div className="skills-container">
       {Object.keys(skillsByCategory).map((category, index) => (
@@ -57,10 +58,14 @@ const Skills: React.FC = () => {
           <div className="skills-grid">
             {skillsByCategory[category].map((skill: any, idx: number) => (
               <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <FaReact />}</div>
+                <div className="icon">{iconMap[skill.icon] || null}</div>
                 <h3 className="skill-name">
-                  {skill.name.split('').map((letter: any, i: number) => (
-                    <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>
+                  {skill.name.split("").map((letter: any, i: number) => (
+                    <span
+                      key={i}
+                      className="letter"
+                      style={{ animationDelay: `${i * 0.05}s` }}
+                    >
                       {letter}
                     </span>
                   ))}

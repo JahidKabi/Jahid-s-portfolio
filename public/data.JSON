@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Python",
+    "category": "Backend",
+    "icon": "SiPython",
+    "description": "Experienced in developing backend services with Python."
+  },
+  {
+    "name": "Node.js",
+    "category": "Backend",
+    "icon": "FaNodeJs",
+    "description": "Built APIs and real-time services using Express and Node.js."
+  },
+  {
+    "name": "CI/CD",
+    "category": "Cloud and DevOps",
+    "icon": "FaCodeBranch",
+    "description": "Implemented automated pipelines for continuous integration and deployment."
+  },
+  {
+    "name": "Kubernetes",
+    "category": "Cloud and DevOps",
+    "icon": "SiKubernetes",
+    "description": "Managed container orchestration with Kubernetes in production."
+  },
+  {
+    "name": "MySQL",
+    "category": "Databases",
+    "icon": "SiMysql",
+    "description": "Designed and optimized relational schemas using MySQL."
+  },
+  {
+    "name": "React",
+    "category": "Frontend",
+    "icon": "FaReact",
+    "description": "Built responsive and dynamic UIs using React."
+  },
+  {
+    "name": "HTML & CSS",
+    "category": "Frontend",
+    "icon": "SiHtml5",
+    "description": "Structured and styled web pages with HTML and CSS."
+  },
+  {
+    "name": "",
+    "category": "IT Support & Administration",
+    "icon": "",
+    "description": "Cloud Technology Architecture, IT Service & Infrastructure Deployment, DLP, Microsoft Exchange server, Intune, ADFS, SCCM"
+  },
+  {
+    "name": "",
+    "category": "Other tools & Practice's",
+    "icon": "",
+    "description": "Dockerization, Agile"
+  }
+]
