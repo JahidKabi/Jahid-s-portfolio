@@ -1,5 +1,5 @@
 // queries/getTimeline.ts
-/*
+
 import datoCMSClient from './datoCMSClient';
 import { TimelineItem } from '../types';
 
@@ -21,4 +21,4 @@ export async function getTimeline(): Promise<TimelineItem[]> {
   return data.allTimelines;
 }
 
-*/
+

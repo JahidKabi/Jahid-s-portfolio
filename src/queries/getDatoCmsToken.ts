@@ -1,5 +1,5 @@
 // getDatoCmsToken.ts
-/*
+
 export const getDatoCmsToken = (): string => {
   const hostname = window.location.hostname;
 
@@ -27,4 +27,4 @@ export const getDatoCmsToken = (): string => {
   }
 };
 
-*/
+

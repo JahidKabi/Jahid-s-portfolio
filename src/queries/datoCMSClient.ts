@@ -1,4 +1,3 @@
-/*
 import { GraphQLClient } from 'graphql-request';
 import { getDatoCmsToken } from './getDatoCmsToken';
 
@@ -12,4 +11,3 @@ const datoCMSClient = new GraphQLClient(DATO_CMS_ENDPOINT, {
 });
 
 export default datoCMSClient;
-*/

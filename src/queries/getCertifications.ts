@@ -1,5 +1,4 @@
 // queries/getCertifications.ts
-
 import datoCMSClient from './datoCMSClient';
 import { Certification } from '../types';
 

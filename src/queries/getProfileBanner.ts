@@ -1,5 +1,5 @@
 // queries/getProfileBanner.ts
-/*
+
 import datoCMSClient from './datoCMSClient';
 import { ProfileBanner } from '../types';
 
@@ -24,4 +24,4 @@ export async function getProfileBanner(): Promise<ProfileBanner> {
   console.log("🚀 ~ getProfileBanner ~ data:", data)
   return data.profilebanner;
 }
-  */
+
