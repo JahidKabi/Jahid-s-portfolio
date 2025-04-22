@@ -1,4 +1,4 @@
-/*
+
 import React, { useEffect, useState } from "react";
 import "./Certifications.css";
 import { FaExternalLinkAlt, FaUniversity } from "react-icons/fa";
@@ -21,4 +21,3 @@ const Certifications: React.FC = () => {
 };
 
 export default Certifications;
-*/
