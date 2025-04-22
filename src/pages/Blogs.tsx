@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import "./Blogs.css";
 import { FaMedium, FaDev } from "react-icons/fa";
 
@@ -11,3 +11,5 @@ const Blogs: React.FC = () => {
 };
 
 export default Blogs;
+
+*/

@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 
@@ -6,3 +7,4 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+*/
