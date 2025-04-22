@@ -7,7 +7,7 @@ export const getDatoCmsToken = (): string => {
     // Add your production Netlify domain and local dev domains
     case '6807f993814b7088050c3696--jahid-s-portfolio.netlify.app':
     case 'localhost':  // Localhost for local dev
-      return '4fdf5d5375750768c2dddcb2f55526';  // Replace with your actual DatoCMS token
+      return 'f49794b0786d7869bc598ef06ac4ab';  // Replace with your actual DatoCMS token
 
     // Optional: Add other hostnames or environments if applicable
     // case 'another-unique-hostname.com':
