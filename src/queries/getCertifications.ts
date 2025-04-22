@@ -1,22 +1,16 @@
-// queries/getCertifications.ts
-/*
-import datoCMSClient from './datoCMSClient';
-import { Certification } from '../types';
-
-const GET_CERTIFICATIONS = `
-  query {
-    allCertifications {
-      title
-      issuer
-      issuedDate
-      link
-      iconName
-    }
+const certifications = [
+  {
+    title: 'Certified Developer',
+    issuer: 'Tech Institute',
+    issuedDate: '2023-01-01',
+    link: 'https://example.com',
+    iconName: 'cert-icon'
+  },
+  {
+    title: 'Advanced React',
+    issuer: 'React Academy',
+    issuedDate: '2022-12-01',
+    link: 'https://example.com',
+    iconName: 'react-icon'
   }
-`;
-
-export async function getCertifications(): Promise<Certification[]> {
-  const data = await datoCMSClient.request<{ allCertifications: Certification[] }>(GET_CERTIFICATIONS);
-  return data.allCertifications;
-}
-*/
+];
